@@ -1,4 +1,4 @@
-First Repo
+First Repository
 -
 
 **[Instructions](https://pages.github.com/)**
