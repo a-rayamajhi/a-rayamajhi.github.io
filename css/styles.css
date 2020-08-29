@@ -91,18 +91,18 @@ a:active {
 }
 
 .other-projects > .h2 {
-  margin: 2rem;
+  margin: 1rem;
 }
 
 .project-showcase-left-menu {
   background-color: #161616;
-  padding: 4rem 0.5rem;
+  padding: 5rem 0.5rem 7rem 0.5rem;
   color: #f0f0f0;
-  border-radius: 30px;
+  border-radius: 10px;
 }
 
 .bu-courses {
-  padding: 1rem 1.5rem;
+  padding: 1.5rem 1.5rem;
   cursor: pointer;
   border-radius: 5px;
 }
