@@ -1,1 +1,209 @@
-HELLO WORLD
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./vendor/css/v5.bootstrap.css" />
+    <script defer src="./vendor/js/all.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <header class="header-wrapper">
+      <div class="container">
+        <div class="socials">
+          <div class="row justify-content-end">
+            <div class="social-header" title="Github">
+              <i class="fab fa-github"></i>
+            </div>
+            <div class="social-header" title="Twitter">
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="social-header" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </div>
+            <div class="social-header" title="Resume">
+              <i class="fas fa-file-pdf"></i>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-auto header-content">
+            <div class="display-4">Anil Rayamajhi</div>
+            <div class="h3">Full Stack Developer</div>
+            <a href="#profile" class="js-scroll-trigger"
+              ><i class="fas fa-chevron-down fa-3x"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#"
+          ><img src="./assets/logo.png" alt=""
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#main_nav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main_nav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#profile"> Profile </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects"> Projects </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"> Contact </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="profile-wrapper" id="profile">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-10">
+            <div class="display-6">Anil Rayamajhi</div>
+            <div class="h5">Full Stack Developer</div>
+            <div><strong>Los Angeles, CA</strong></div>
+
+            <div class="profile-content">
+              I am currently pursuing BS in Full Stack Web Development in MEAN
+              Stack. In 2012, I moved to Los Angeles from Kathmandu, Nepal with
+              a degree in Computer Networking, London Met University. After
+              moving to the US, I took General Educations and STEM classes to
+              match up with American Education System. During this process I
+              knew I wanted to elevate my career in Software development. During
+              my few years of Software Development career, I understood Software
+              Development more or less is an infinite learning loop than just a
+              career. Fortunately, I found Bellevue University. One thing that
+              has completely stricted me about the University is the Curriculum.
+              It definitely aligns with what the current market is looking for.
+              Stoked for what’s coming each week.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="projects-wrapper" id="projects">
+      <div class="container">
+        <div class="capstone-section">
+          <div class="row align-items-center">
+            <div class="col-md-8">
+              <img src="./assets/capstone-placeholder.jpg" alt="" />
+            </div>
+            <div class="col-md-4">
+              Currently showing placeholder for the capstone project. This
+              project will be a full stack project built on MEAN Stack. MEAN
+              stack stands for Mongo DB, Express, Angular and Node. MongoDB is
+              no sql database, Express is the Web Framework, Angular is frontend
+              framework and finally Node is the server side environment.
+            </div>
+          </div>
+        </div>
+
+        <div class="other-projects">
+          <div class="h2">Project Show Case</div>
+          <div class="row">
+            <div class="menu">
+              <div class="project-showcase-left-menu">
+                <div class="bu-courses active">
+                  <div class="main">WEB 200</div>
+                  <div class="secondary-text">
+                    Fundamentals of Web Developmnt
+                  </div>
+                </div>
+                <div class="bu-courses">
+                  <div class="main">WEB 201</div>
+                  <div class="secondary-text">
+                    Internet Systems Architecture
+                  </div>
+                </div>
+                <div class="bu-courses">
+                  <div class="main">WEB 231</div>
+                  <div class="secondary-text">Enterprise JavaScript l</div>
+                </div>
+                <div class="bu-courses">
+                  <div class="main">WEB 321</div>
+                  <div class="secondary-text">
+                    Business Environment for Web P
+                  </div>
+                </div>
+                <div class="bu-courses">
+                  <div class="main">WEB 330</div>
+                  <div class="secondary-text">Enterprise JavaScript II</div>
+                </div>
+                <div class="bu-courses">
+                  <div class="main">WEB340</div>
+                  <div class="secondary-text">Node.js</div>
+                </div>
+              </div>
+            </div>
+            <div class="dash">
+              <div class="container">
+                Showcase all the achievements of the course selected. (IN
+                PROGRESS)
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="location-contact">
+            <div class="text-center row justify-content-center">
+              <div>
+                <i class="far fa-map fa-2x"></i>
+              </div>
+              <div>ADDRESS</div>
+              <div class="horizontal-line"></div>
+              <div>Los Angeles, CA</div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="location-contact">
+            <div class="text-center row justify-content-center">
+              <div>
+                <i class="far fa-envelope fa-2x"></i>
+              </div>
+              <div>EMAIL</div>
+              <div class="horizontal-line"></div>
+              <div>arayamjahi@my365.bellevue.edu</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">FOOTER IN PROGRESS</div>
+        <div class="col-md-4"></div>
+      </div>
+    </footer>
+
+    <!-- JavaScript and dependencies -->
+    <script src="./vendor/js/popper.min.js"></script>
+    <script src="./vendor/js/v5.bootstrap.min.js"></script>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>
