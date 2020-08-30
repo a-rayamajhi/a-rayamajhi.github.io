@@ -101,17 +101,17 @@ a:active {
   border-radius: 10px;
 }
 
-.bu-courses {
+.bu-course {
   padding: 1.5rem 1.5rem;
   cursor: pointer;
   border-radius: 5px;
 }
 
-.bu-courses:hover {
+.bu-course:hover {
   background-color: #000;
 }
 
-.bu-courses.active {
+.bu-course.active {
   font-size: 1.1rem;
   background-color: #000;
 }
@@ -170,4 +170,12 @@ footer {
   height: 2px;
   margin: 15px auto;
   background-color: #5d0000;
+}
+
+.dash > .container {
+  padding: 2rem 1rem;
+}
+
+.course-content {
+  display: none;
 }
