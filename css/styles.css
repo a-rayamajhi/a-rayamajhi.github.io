@@ -96,23 +96,29 @@ a:active {
 
 .project-showcase-left-menu {
   background-color: #161616;
-  padding: 5rem 0.5rem 7rem 0.5rem;
+  padding: 5rem 0.5rem 5rem 0.5rem;
+  height: 900px;
   color: #f0f0f0;
   border-radius: 10px;
 }
 
 .bu-course {
-  padding: 1.5rem 1.5rem;
+  height: 100px;
+  display: flex;
+  padding-left: 1em;
+  align-items: center;
   cursor: pointer;
   border-radius: 5px;
+  transition: all 0.3s ease;
 }
 
 .bu-course:hover {
   background-color: #000;
+  font-size: 1.05rem;
 }
 
 .bu-course.active {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   background-color: #000;
 }
 
@@ -120,19 +126,26 @@ a:active {
   font-size: 0.8em;
 }
 
-.other-projects .menu {
-  width: 300px;
-}
-
 .other-projects .dash {
-  width: calc(100% - 300px);
+  width: calc(100% - 100px);
+  height: 900px;
+  overflow: auto;
 }
 
 footer {
   height: 800px;
-  padding-top: 5rem;
-  background-color: #161616;
   color: #f0f0f0;
+  background: linear-gradient(
+      to bottom,
+      rgba(22, 22, 22, 0.1) 0,
+      rgba(22, 22, 22, 0.5) 75%,
+      #161616 100%
+    ),
+    url(../assets/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
 }
 
 .socials {
@@ -173,9 +186,59 @@ footer {
 }
 
 .dash > .container {
-  padding: 2rem 1rem;
+  padding: 2rem 1rem 0;
 }
 
 .course-content {
   display: none;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-left: 2em;
+  font-weight: 700;
+}
+
+.card {
+  margin-bottom: 3em;
+  border-radius: 5px;
+  max-height: 270px;
+  overflow: hidden;
+}
+
+.card:hover {
+  box-shadow: 2px -3px 12px #16161687;
+  border: none;
+}
+
+.card-img-overlay {
+  background-image: linear-gradient(#444 0, transparent 25%);
+}
+.card-text.main {
+  font-size: 0.9em;
+  font-weight: 700;
+  color: white;
+}
+
+.other-projects .menu {
+  width: 100px;
+}
+
+.bu-course-container > .secondary-text {
+  display: none;
+}
+
+.card-img {
+}
+
+@media (min-width: 992px) {
+  .other-projects .menu {
+    width: 300px;
+  }
+  .bu-course-container > .secondary-text {
+    display: block;
+  }
+
+  .other-projects .dash {
+    width: calc(100% - 300px);
+  }
 }

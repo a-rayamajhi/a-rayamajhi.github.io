@@ -45,7 +45,10 @@
     </header>
 
     <!-- Working Navigation Menu -->
-    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      id="navbar_top"
+      class="navbar navbar-expand-lg navbar-light bg-light sticky-top"
+    >
       <div class="container">
         <a class="navbar-brand" href="#"
           ><img src="./assets/logo.png" alt=""
@@ -69,7 +72,7 @@
               <a class="nav-link" href="#projects"> Projects </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#"> Contact </a>
+              <a class="nav-link" href="#contact"> Contact </a>
             </li>
           </ul>
         </div>
@@ -128,109 +131,315 @@
             <div class="menu">
               <div class="project-showcase-left-menu">
                 <div class="bu-course active" id="200">
-                  <div class="main">WEB 200</div>
-                  <div class="secondary-text">
-                    Fundamentals of Web Developmnt
-                  </div>
-                  <div class="course-content">
-                    <h4>WEB 200</h4>
-                    <hr />
-                    <div>
-                      BioSite:
-                      <a href="https://a-rayamajhi.github.io/bioSite/"
-                        >https://a-rayamajhi.github.io/bioSite/</a
-                      >
+                  <div class="bu-course-container">
+                    <div class="main">WEB 200</div>
+                    <div class="secondary-text">
+                      Fundamentals of Web Developmnt
                     </div>
-                    <div>
-                      BioSite Github:
-                      <a href="https://github.com/a-rayamajhi/bioSite"
-                        >https://github.com/a-rayamajhi/bioSite</a
-                      >
+                    <div class="course-content">
+                      <h4>WEB 200</h4>
+                      <div>Fundamentals of Web Development</div>
+                      <hr />
+                      <div class="row">
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://www.figma.com/proto/sHLP6eUkMvTthCdHG39rXF/gx-soul?node-id=1%3A4&viewport=751%2C526%2C0.2654285728931427&scaling=scale-down"
+                            >
+                              <img
+                                src="assets/bu-course/bioSiteComp.png"
+                                class="card-img"
+                                alt="github bio"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">
+                                  BioSite Comp (Figma)
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://a-rayamajhi.github.io/bioSite/"
+                            >
+                              <img
+                                class="card-img"
+                                src="assets/bu-course/bioSiteWebsite.png"
+                                alt="bio site website"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">BioSite</div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://github.com/a-rayamajhi/bioSite"
+                            >
+                              <img
+                                src="assets/bu-course/bioSiteGithub.png"
+                                class="card-img"
+                                alt="github bio"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">
+                                  BioSite (Github)
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="bu-course" id="201">
-                  <div class="main">WEB 201</div>
-                  <div class="secondary-text">
-                    Internet Systems Architecture
-                  </div>
-                  <div class="course-content">
-                    <h4>WEB 201</h4>
-                    <hr />
-                    <div>Github:</div>
+                  <div class="bu-course-container">
+                    <div class="main">WEB 201</div>
+                    <div class="secondary-text">
+                      Internet Systems Architecture
+                    </div>
+                    <div class="course-content">
+                      <h4>WEB 201</h4>
+                      <div>Internet Systems Architecture</div>
+                      <hr />
+                    </div>
                   </div>
                 </div>
                 <div class="bu-course" id="231">
-                  <div class="main">WEB 231</div>
-                  <div class="secondary-text">Enterprise JavaScript I</div>
-                  <div class="course-content">
-                    <h4>WEB 231</h4>
-                    <hr />
-                    <div>
-                      Github:
-                      <a href="https://github.com/a-rayamajhi/web-231"
-                        >https://github.com/a-rayamajhi/web-231</a
-                      >
+                  <div class="bu-course-container">
+                    <div class="main">WEB 231</div>
+                    <div class="secondary-text">Enterprise JavaScript I</div>
+                    <div class="course-content">
+                      <h4>WEB 231</h4>
+                      <div>Enterprise JavaScript I</div>
+                      <hr />
+                      <div class="row">
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://github.com/a-rayamajhi/web-231"
+                            >
+                              <img
+                                class="card-img"
+                                src="assets/bu-course/web231Github.png"
+                                alt="Web 231"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">
+                                  WEB 231 (Github)
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="bu-course" id="321">
-                  <div class="main">WEB 321</div>
-                  <div class="secondary-text">
-                    Business Environment for Web P
-                  </div>
-                  <div class="course-content">
-                    <h4>WEB 321</h4>
-                    <hr />
-                    <div>Github:</div>
+                  <div class="bu-course-container">
+                    <div class="main">WEB 321</div>
+                    <div class="secondary-text">
+                      Business Environment for Web P
+                    </div>
+                    <div class="course-content">
+                      <h4>WEB 321</h4>
+                      <div>Business Environment for Web P</div>
+                      <hr />
+                      <div class="row">
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://www.figma.com/proto/PbsHXeYY76QjC4TqX5xSpm/captone-project?node-id=1%3A76&viewport=896%2C100%2C0.46895232796669006&scaling=contain"
+                            >
+                              <img
+                                class="card-img"
+                                src="assets/bu-course/web201-capstone.png"
+                                alt="bio site website"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">
+                                  Capstone Project (Figma)
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="bu-course" id="330">
-                  <div class="main">WEB 330</div>
-                  <div class="secondary-text">Enterprise JavaScript II</div>
-                  <div class="course-content">
-                    <h4>WEB 330</h4>
-                    <hr />
-                    <div>
-                      Github:
-                      <a href="https://github.com/a-rayamajhi/web-330"
-                        >https://github.com/a-rayamajhi/web-330</a
-                      >
+                  <div class="bu-course-container">
+                    <div class="main">WEB 330</div>
+                    <div class="secondary-text">Enterprise JavaScript II</div>
+                    <div class="course-content">
+                      <h4>WEB 330</h4>
+                      <div>Enterprise JavaScript II</div>
+                      <hr />
+                      <div class="row">
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://github.com/a-rayamajhi/web-330"
+                            >
+                              <img
+                                class="card-img"
+                                src="assets/bu-course/web330Github.png"
+                                alt="Web 231"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">
+                                  WEB 330 (Github)
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://a-rayamajhi.github.io/js-ninja/"
+                            >
+                              <img
+                                class="card-img"
+                                src="assets/bu-course/JSNinja.png"
+                                alt="Web 231"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">
+                                  JSNinja Site (GH Page)
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://www.figma.com/proto/5N8r9o8LBCCjiSh9hMbApl/JS-Ninja?node-id=3%3A4&viewport=-1628%2C1386%2C0.4315620958805084&scaling=scale-down"
+                            >
+                              <img
+                                class="card-img"
+                                src="assets/bu-course/JSNinjaComp.png"
+                                alt="Web 231"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">
+                                  JSNinja Comp (Figma)
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
                 <div class="bu-course" id="340">
-                  <div class="main">WEB340</div>
-                  <div class="secondary-text">Node.js</div>
-                  <div class="course-content">
-                    <h4>WEB 340</h4>
-                    <hr />
-                    <div>
-                      Github:
-                      <a href="https://github.com/a-rayamajhi/web-340"
-                        >https://github.com/a-rayamajhi/web-340</a
-                      >
+                  <div class="bu-course-container">
+                    <div class="main">WEB 340</div>
+                    <div class="secondary-text">Node.js</div>
+                    <div class="course-content">
+                      <h4>WEB 340</h4>
+                      <div>Node.js</div>
+                      <hr />
+                      <div class="row">
+                        <div class="dash-item col-xl-6">
+                          <div class="card text-white">
+                            <a
+                              target="_blank"
+                              href="https://github.com/a-rayamajhi/web-340"
+                            >
+                              <img
+                                class="card-img"
+                                src="assets/bu-course/web330Github.png"
+                                alt="Web 231"
+                              />
+                              <div class="card-img-overlay">
+                                <div class="card-text main">
+                                  WEB 330 (Github)
+                                </div>
+                              </div>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
             <div class="dash">
-              <div class="container" id="dash-content">
+              <div class="dash-content container" id="dash-content">
                 <h4>WEB 200</h4>
+                <div>Fundamentals of Web Development</div>
                 <hr />
-                <div>
-                  <div>
-                    BioSite:
-                    <a href="https://a-rayamajhi.github.io/bioSite/"
-                      >https://a-rayamajhi.github.io/bioSite/</a
-                    >
+                <div class="row">
+                  <div class="dash-item col-xl-6">
+                    <div class="card text-white">
+                      <a
+                        target="_blank"
+                        href="https://www.figma.com/proto/sHLP6eUkMvTthCdHG39rXF/gx-soul?node-id=1%3A4&viewport=751%2C526%2C0.2654285728931427&scaling=scale-down"
+                      >
+                        <img
+                          src="assets/bu-course/bioSiteComp.png"
+                          class="card-img"
+                          alt="github bio"
+                        />
+                        <div class="card-img-overlay">
+                          <div class="card-text main">BioSite Comp (Figma)</div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    BioSite Github:
-                    <a href="https://github.com/a-rayamajhi/bioSite"
-                      >https://github.com/a-rayamajhi/bioSite</a
-                    >
+                  <div class="dash-item col-xl-6">
+                    <div class="card text-white">
+                      <a
+                        target="_blank"
+                        href="https://a-rayamajhi.github.io/bioSite/"
+                      >
+                        <img
+                          class="card-img"
+                          src="assets/bu-course/bioSiteWebsite.png"
+                          alt="bio site website"
+                        />
+                        <div class="card-img-overlay">
+                          <div class="card-text main">BioSite</div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="dash-item col-xl-6">
+                    <div class="card text-white">
+                      <a
+                        target="_blank"
+                        href="https://github.com/a-rayamajhi/bioSite"
+                      >
+                        <img
+                          src="assets/bu-course/bioSiteGithub.png"
+                          class="card-img"
+                          alt="github bio"
+                        />
+                        <div class="card-img-overlay">
+                          <div class="card-text main">BioSite Github</div>
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -240,37 +449,31 @@
       </div>
     </div>
 
-    <footer>
-      <div class="row justify-content-center">
-        <div class="col-md-5">
-          <div class="location-contact">
-            <div class="text-center row justify-content-center">
-              <div>
-                <i class="far fa-map fa-2x"></i>
-              </div>
-              <div>ADDRESS</div>
-              <div class="horizontal-line"></div>
-              <div>Los Angeles, CA</div>
+    <!-- Footer with email and location -->
+    <footer id="contact" class="row align-items-center justify-content-center">
+      <div class="col-md-5">
+        <div class="location-contact">
+          <div class="text-center row justify-content-center">
+            <div>
+              <i class="far fa-map fa-2x"></i>
             </div>
-          </div>
-        </div>
-        <div class="col-md-5">
-          <div class="location-contact">
-            <div class="text-center row justify-content-center">
-              <div>
-                <i class="far fa-envelope fa-2x"></i>
-              </div>
-              <div>EMAIL</div>
-              <div class="horizontal-line"></div>
-              <div>arayamjahi@my365.bellevue.edu</div>
-            </div>
+            <div>ADDRESS</div>
+            <div class="horizontal-line"></div>
+            <div>Los Angeles, CA</div>
           </div>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4"></div>
-        <div class="col-md-4">FOOTER IN PROGRESS</div>
-        <div class="col-md-4"></div>
+      <div class="col-md-5">
+        <div class="location-contact">
+          <div class="text-center row justify-content-center">
+            <div>
+              <i class="far fa-envelope fa-2x"></i>
+            </div>
+            <div>EMAIL</div>
+            <div class="horizontal-line"></div>
+            <div>arayamjahi@my365.bellevue.edu</div>
+          </div>
+        </div>
       </div>
     </footer>
 
