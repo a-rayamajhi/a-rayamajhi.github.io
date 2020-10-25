@@ -137,7 +137,6 @@ a:active {
 }
 
 footer {
-  height: 800px;
   color: #f0f0f0;
   background: linear-gradient(
       to bottom,
@@ -150,6 +149,12 @@ footer {
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+}
+
+footer,
+footer > .container,
+footer > .container > .row {
+  height: 800px;
 }
 
 .socials {
