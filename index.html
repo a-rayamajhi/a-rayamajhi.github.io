@@ -420,16 +420,18 @@
                         </div>
                         <div class="dash-item col-xl-6">
                           <div class="card text-white">
-                            <div class="cursor-pointer" data-toggle="modal" data-target="#dataModelsModal">
+                            <div
+                              class="cursor-pointer"
+                              data-toggle="modal"
+                              data-target="#dataModelsModal"
+                            >
                               <img
                                 class="card-img"
-                                src="assets/bu-course/nosql-datadiagrams/assignment-1.4.png"
+                                src="assets/bu-course/nosql-datadiagrams/node-shopper/assignment-2.2-ord.png"
                                 alt="rest presentation"
                               />
                               <div class="card-img-overlay">
-                                <div class="card-text main">
-                                  Data Models
-                                </div>
+                                <div class="card-text main">Data Diagrams</div>
                               </div>
                             </div>
                           </div>
@@ -468,7 +470,11 @@
                         </div>
                         <div class="dash-item col-xl-6">
                           <div class="card text-white">
-                            <div class="cursor-pointer" data-toggle="modal" data-target="#restModal">
+                            <div
+                              class="cursor-pointer"
+                              data-toggle="modal"
+                              data-target="#restModal"
+                            >
                               <img
                                 class="card-img"
                                 src="assets/bu-course/presentation 1.3 - REST.jpg"
@@ -552,7 +558,6 @@
         </div>
       </div>
     </div>
-    
 
     <!-- Footer with email and location -->
     <footer id="contact">
@@ -586,69 +591,351 @@
       </div>
     </footer>
 
-
-
     <!-- Modals -->
     <!-- WEB 420 - REST Presentation -->
-    <div class="modal fade" id="restModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="restModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="restModal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="restModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
             <h5 class="modal-title" id="restModalLabel">REST Presentation</h5>
-            <button type="button" class="btn btn-light" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+            <button
+              type="button"
+              class="btn btn-light"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa fa-times"></i>
+            </button>
           </div>
           <div class="modal-body">
-            <video controls autoplay reload="none" style="width:100%; height: 100%;">
-              <source src="./assets/bu-course/restful-api-presentations/Presentation 1.3 - REST.mp4" type="video/mp4" />
+            <video
+              controls
+              autoplay
+              reload="none"
+              style="width: 100%; height: 100%"
+            >
+              <source
+                src="./assets/bu-course/restful-api-presentations/Presentation 1.3 - REST.mp4"
+                type="video/mp4"
+              />
             </video>
           </div>
         </div>
       </div>
     </div>
 
-
     <!-- WEB 335 - NoSQL Diagram -->
-    <div class="modal fade" id="dataModelsModal" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="dataModelsModalLabel" aria-hidden="true">
+    <div
+      class="modal fade"
+      id="dataModelsModal"
+      data-backdrop="static"
+      data-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="dataModelsModalLabel"
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-xl">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="dataModelsModalLabel">ORD/NoSQL Data Structures</h5>
-            <button type="button" class="btn btn-light" data-dismiss="modal" aria-label="Close"><i class="fa fa-times"></i></button>
+            <h5 class="modal-title" id="dataModelsModalLabel">
+              ORD/NoSQL Data Structures
+            </h5>
+            <button
+              type="button"
+              class="btn btn-light"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <i class="fa fa-times"></i>
+            </button>
           </div>
           <div class="modal-body">
-            <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-              <ol class="carousel-indicators">
-                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
-                <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-              </ol>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="./assets/bu-course/nosql-datadiagrams/assignment-1.4-ord.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Object Relational Diagram</h5>
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <a
+                  class="nav-link active"
+                  id="nav-data-models-tab"
+                  data-toggle="tab"
+                  href="#nav-data-models"
+                  role="tab"
+                  aria-controls="nav-data-models"
+                  aria-selected="true"
+                  >Data Models</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-node-shopper-tab"
+                  data-toggle="tab"
+                  href="#nav-node-shopper"
+                  role="tab"
+                  aria-controls="nav-node-shopper"
+                  aria-selected="false"
+                  >Node Shopper</a
+                >
+                <a
+                  class="nav-link"
+                  id="nav-node-tech-tab"
+                  data-toggle="tab"
+                  href="#nav-node-tech"
+                  role="tab"
+                  aria-controls="nav-node-tech"
+                  aria-selected="false"
+                  >NodeTech</a
+                >
+              </div>
+            </nav>
+
+            <div class="tab-content" id="nav-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="nav-data-models"
+                role="tabpanel"
+                aria-labelledby="nav-data-models-tab"
+              >
+                <div
+                  id="carouselExampleCaptions"
+                  class="carousel slide"
+                  data-ride="carousel"
+                >
+                  <ol class="carousel-indicators">
+                    <li
+                      data-target="#carouselExampleCaptions"
+                      data-slide-to="0"
+                      class="active"
+                    ></li>
+                    <li
+                      data-target="#carouselExampleCaptions"
+                      data-slide-to="1"
+                    ></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="./assets/bu-course/nosql-datadiagrams/data-models/assignment-1.4-ord.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>Object Relational Diagram</h5>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="./assets/bu-course/nosql-datadiagrams/data-models/assignment-1.4.png"
+                        class="d-block w-100"
+                        alt="..."
+                      />
+                      <div class="carousel-caption d-none d-md-block">
+                        <h5>NoSQL Data Structures</h5>
+                      </div>
+                    </div>
                   </div>
+                  <a
+                    class="carousel-control-prev"
+                    href="#carouselExampleCaptions"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </a>
+                  <a
+                    class="carousel-control-next"
+                    href="#carouselExampleCaptions"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                  </a>
                 </div>
-                <div class="carousel-item">
-                  <img src="./assets/bu-course/nosql-datadiagrams/assignment-1.4.png" class="d-block w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>NoSQL Data Structures</h5>
+              </div>
+
+              <div
+                class="tab-pane fade"
+                id="nav-node-shopper"
+                role="tabpanel"
+                aria-labelledby="nav-node-shopper-tab"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-node-shopper"
+                  role="tabpanel"
+                  aria-labelledby="nav-node-shopper"
+                >
+                  <div
+                    id="carouselNodeShopper"
+                    class="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <ol class="carousel-indicators">
+                      <li
+                        data-target="#carouselNodeShopper"
+                        data-slide-to="0"
+                        class="active"
+                      ></li>
+                      <li
+                        data-target="#carouselNodeShopper"
+                        data-slide-to="1"
+                      ></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="./assets/bu-course/nosql-datadiagrams/node-shopper/assignment-2.2-ord.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Object Relational Diagram</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./assets/bu-course/nosql-datadiagrams/node-shopper/assignment-2.2-nosql.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>NoSQL Data Structures</h5>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#carouselNodeShopper"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#carouselNodeShopper"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                    </a>
                   </div>
                 </div>
               </div>
-              <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              </a>
-              <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              </a>
+
+              <div
+                class="tab-pane fade"
+                id="nav-node-tech"
+                role="tabpanel"
+                aria-labelledby="nav-node-tech-tab"
+              >
+                <div
+                  class="tab-pane fade show active"
+                  id="nav-node-tech"
+                  role="tabpanel"
+                  aria-labelledby="nav-node-tech"
+                >
+                  <div
+                    id="carouselNodeTech"
+                    class="carousel slide"
+                    data-ride="carousel"
+                  >
+                    <ol class="carousel-indicators">
+                      <li
+                        data-target="#carouselNodeTech"
+                        data-slide-to="0"
+                        class="active"
+                      ></li>
+                      <li
+                        data-target="#carouselNodeTech"
+                        data-slide-to="1"
+                      ></li>
+                      <li
+                        data-target="#carouselNodeTech"
+                        data-slide-to="2"
+                      ></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img
+                          src="./assets/bu-course/nosql-datadiagrams/node-tech/assignment-2.3-ord.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>Object Relational Diagram</h5>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./assets/bu-course/nosql-datadiagrams/node-tech/assignment-2.2-nosql-class.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>NoSQL Data Structures</h5>
+                          <p>a CLASS may ENROLL many students</p>
+                        </div>
+                      </div>
+                      <div class="carousel-item">
+                        <img
+                          src="./assets/bu-course/nosql-datadiagrams/node-tech/assignment-2.2-nosql-student.png"
+                          class="d-block w-100"
+                          alt="..."
+                        />
+                        <div class="carousel-caption d-none d-md-block">
+                          <h5>NoSQL Data Structures</h5>
+                          <p>each STUDENT may ENROLL in many CLASSes</p>
+                        </div>
+                      </div>
+                    </div>
+                    <a
+                      class="carousel-control-prev"
+                      href="#carouselNodeTech"
+                      role="button"
+                      data-slide="prev"
+                    >
+                      <span
+                        class="carousel-control-prev-icon"
+                        aria-hidden="true"
+                      ></span>
+                    </a>
+                    <a
+                      class="carousel-control-next"
+                      href="#carouselNodeTech"
+                      role="button"
+                      data-slide="next"
+                    >
+                      <span
+                        class="carousel-control-next-icon"
+                        aria-hidden="true"
+                      ></span>
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
     <!----------------->
-
-
 
     <!-- JavaScript and dependencies -->
     <script src="./vendor/js/popper.min.js"></script>
