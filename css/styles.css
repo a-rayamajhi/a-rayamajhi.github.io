@@ -99,7 +99,7 @@ a:active {
 }
 
 .project-showcase-left-menu {
-  background-color: #161616;
+  background-color: #212121;
   padding: 1rem 0.5rem 1rem 0.5rem;
   color: #f0f0f0;
   border-radius: 10px;
@@ -131,7 +131,7 @@ a:active {
 
 .other-projects .dash {
   width: calc(100% - 100px);
-  height: 900px;
+  height: 1124px;
   overflow: auto;
 }
 
